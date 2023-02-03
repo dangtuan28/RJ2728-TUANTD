@@ -167,3 +167,25 @@ npm start
 // May o nha
 - Install npm: npm install
 - Start app: npm start
+
+
+data types
+string,boolean,number,null,underfied,object,symbol
+
+
+
+let num = 2  Number
+let str ='str '  String
+let isOpen = true  Boolean
+let nu = null
+let a = undefined
+
+
+let arr =[1,2,3,4] Array<Number>
+
+// Object
+let user = {
+  name: 'asd',
+  age: 12
+  
+}

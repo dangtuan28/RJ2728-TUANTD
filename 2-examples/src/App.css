@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+.color__red{
+  background-color: red;
+} */
+img{
+  width: 700px;
+}
+header{
+  background-color: rgb(243, 235, 235);
+  height: 100px;
+  justify-items: center;
+}
+.bg__1{
+  background-color: aquamarine;
 }
