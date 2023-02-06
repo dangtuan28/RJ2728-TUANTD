@@ -10,6 +10,7 @@ import Countdown from './components/example/4-Lifecycle/Countdown';
 import ChangeColor from './components/ex/ChangeColor';
 import RenderListUser from './components/ex/RenderListUser';
 import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
+import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
 
 
 function App() {
@@ -18,11 +19,11 @@ function App() {
       {/* <JSX /> */}
       {/* <Session02 /> */}
       {/* <LikeBtn /> */}
-      < RateBtn />
+      {/* < RateBtn /> */}
       {/* <Countdown /> */}
       {/* < ChangeColor /> */}
       {/* < RenderListUser /> */}
-     
+     < Bai4Tab />
     </>
   );
 }
