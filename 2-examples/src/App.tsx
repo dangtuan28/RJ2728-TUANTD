@@ -11,6 +11,9 @@ import ChangeColor from './components/ex/ChangeColor';
 import RenderListUser from './components/ex/RenderListUser';
 import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
 import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
+import Accordions from './components/Homework/Session03/Accordions/Accordions';
+import UserDetail from './components/pages/User/Detail/UserDetail';
+import UserForm from './components/pages/User/Form/UserForm';
 
 
 function App() {
@@ -23,7 +26,10 @@ function App() {
       {/* <Countdown /> */}
       {/* < ChangeColor /> */}
       {/* < RenderListUser /> */}
-     < Bai4Tab />
+     {/* < Bai4Tab /> */}
+     {/* <Accordions /> */}
+     {/* <UserDetail/> */}
+     < UserForm />
     </>
   );
 }

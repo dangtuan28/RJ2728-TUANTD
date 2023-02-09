@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-accordion {
+    width: 60%;
+}
+
+.container-accordion {
+    padding-top: 10px;
+}
+
+.accordion {
+    text-align: left;
+    padding: 15px;
+    width: 100%;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+.div-accordion {
+    border: 0.5px solid rgb(216, 216, 216);
+}
+
+.active-accordion {
+    background: rgb(0, 205, 109);
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.content {
+    padding: 20px 20px 5px 20px;
+    display: none;
+}
+
+.active-content {
+    display: block;
+}
