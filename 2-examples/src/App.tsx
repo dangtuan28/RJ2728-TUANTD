@@ -3,17 +3,18 @@ import logo from './logo.svg';
 import './App.css';
 import anh from './assets/image/thewalk.avif'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import JSX from "./components/example/1-JSX";
-import Session02 from './components/Homework/Session02/Session02';
-import LikeBtn from './components/Homework/Session03/LikeBtn/LikeBtn';
-import Countdown from './components/example/4-Lifecycle/Countdown';
-import ChangeColor from './components/ex/ChangeColor';
-import RenderListUser from './components/ex/RenderListUser';
-import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
-import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
-import Accordions from './components/Homework/Session03/Accordions/Accordions';
-import UserDetail from './components/pages/User/Detail/UserDetail';
-import UserForm from './components/pages/User/Form/UserForm';
+// import JSX from "./components/example/1-JSX";
+// import Session02 from './components/Homework/Session02/Session02';
+// import LikeBtn from './components/Homework/Session03/LikeBtn/LikeBtn';
+// import Countdown from './components/example/4-Lifecycle/Countdown';
+// import ChangeColor from './components/ex/ChangeColor';
+// import RenderListUser from './components/ex/RenderListUser';
+// import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
+// import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
+// import Accordions from './components/Homework/Session03/Accordions/Accordions';
+// import UserDetail from './components/pages/User/Detail/UserDetail';
+// import UserForm from './components/pages/User/Form/UserForm';
+import BaseWebRouter from './components/pages/BaseWebRouter';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
      {/* < Bai4Tab /> */}
      {/* <Accordions /> */}
      {/* <UserDetail/> */}
-     < UserForm />
+     {/* < UserForm /> */}
+     <BaseWebRouter />
     </>
   );
 }
