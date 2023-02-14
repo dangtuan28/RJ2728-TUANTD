@@ -1,23 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import anh from './assets/image/thewalk.avif'
 import 'bootstrap/dist/css/bootstrap.min.css'
-// import JSX from "./components/example/1-JSX";
-// import Session02 from './components/Homework/Session02/Session02';
-// import LikeBtn from './components/Homework/Session03/LikeBtn/LikeBtn';
-// import Countdown from './components/example/4-Lifecycle/Countdown';
-// import ChangeColor from './components/ex/ChangeColor';
-// import RenderListUser from './components/ex/RenderListUser';
-// import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
-// import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
-// import Accordions from './components/Homework/Session03/Accordions/Accordions';
-// import UserDetail from './components/pages/User/Detail/UserDetail';
-// import UserForm from './components/pages/User/Form/UserForm';
+import JSX from "./components/example/1-JSX";
+import Session02 from './components/Homework/Session02/Session02';
+import LikeBtn from './components/Homework/Session03/LikeBtn/LikeBtn';
+import Countdown from './components/example/4-Lifecycle/Countdown';
+import ChangeColor from './components/ex/ChangeColor';
+import RenderListUser from './components/ex/RenderListUser';
+import RateBtn from './components/Homework/Session03/RateBtn/RateBtn';
+import Bai4Tab from './components/Homework/Session03/Bai4Tab/Bai4Tab';
+import Accordions from './components/Homework/Session03/Accordions/Accordions';
+import UserDetail from './components/pages/User/Detail/UserDetail';
+import UserForm from './components/pages/User/Form/UserForm';
 import BaseWebRouter from './components/pages/BaseWebRouter';
+import Login from './components/pages/Auth/Login';
+import UserList from './components/pages/User/List/UserList';
+import WebUserList from './components/DoAn/UserWeb/List/WebUserList';
+import BaseWeb from './components/DoAn/BaseWeb';
+import WebUserForm from './components/DoAn/UserWeb/Form/WebUserForm';
+import WebUserDetail from './components/DoAn/UserWeb/Detail/WebUserDetail';
+import LoginWeb from './components/DoAn/Login/LoginWeb';
 
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+  
   return (
     <>
       {/* <JSX /> */}
@@ -31,7 +40,29 @@ function App() {
      {/* <Accordions /> */}
      {/* <UserDetail/> */}
      {/* < UserForm /> */}
-     <BaseWebRouter />
+     {/* <UserList /> */}
+     {/* <BaseWebRouter setIsLogin={function (value: boolean): void {
+        throw new Error('Function not implemented.');
+      } } /> */}
+     {/* {isLogin ? (
+      <BaseWebRouter setIsLogin={setIsLogin} />
+     ) :(
+      <Login setIsLogin={setIsLogin}/>
+     )} */}
+     {/* <WebUserList /> */}
+     {/* <BaseWeb setIsLogin={function (value: boolean): void {
+        throw new Error('Function not implemented.');
+      } } /> */}
+     {/* <WebUserForm /> */}
+     {/* <WebUserDetail /> */}
+    {isLogin ? (
+      <BaseWeb setIsLogin={setIsLogin} />
+     ) :(
+      <LoginWeb setIsLogin={setIsLogin}/>
+     )}
+     {/* <LoginWeb setIsLogin={function (value: boolean): void {
+        throw new Error('Function not implemented.');
+      } } /> */}
     </>
   );
 }

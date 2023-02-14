@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./Bai4Tab.css";
+
+
 import {
   BsFillSuitSpadeFill,
   BsFillSuitClubFill,

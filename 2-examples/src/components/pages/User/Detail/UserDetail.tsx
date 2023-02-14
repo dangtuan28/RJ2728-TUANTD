@@ -1,4 +1,6 @@
+import "./UserDetail.module.css";
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 type Props = {};
 interface IUser {
@@ -8,23 +10,24 @@ interface IUser {
 }
 
 function UserDetail(props: Props) {
+  let params = useParams();
   const [user, setUser] = useState<IUser | undefined>({
-    name: "abc",
+    name: "",
     age: 32,
     id: 4,
   });
   useEffect(() => {
     getUser();
-  }, []);
+  },[]);
   const getUser = () => {
-    const url = "https://63a06c4ce3113e5a5c3d38d4.mockapi.io/Bai1/user/4";
+    const url ="https://63a06c4ce3113e5a5c3d38d4.mockapi.io/Bai1/user/"+ params.id;
     fetch(url, {
       method: "GET",
     })
       .then((response) => response.json())
       .then((data) => {
-        setUser(user);
-        
+        console.error("Success", data);
+        setUser(data);
       })
       .catch((error) => {
         console.error("Error:", error);
